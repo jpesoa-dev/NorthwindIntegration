@@ -1,0 +1,59 @@
+=========================
+Visual Studio
+=========================
+
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+=========================
+Build results
+=========================
+
+[Bb]in/
+[Oo]bj/
+Debug/
+Release/
+
+=========================
+SSIS / SSDT
+=========================
+
+*.dtproj.user
+*.database
+*.dbmdl
+*.jfm
+
+Archivos temporales de SSIS
+
+*.dtsx.autosave
+*.dtsx.user
+
+=========================
+SQL Server / Local DB
+=========================
+
+*.mdf
+*.ldf
+
+=========================
+Logs
+=========================
+
+*.log
+
+=========================
+OS files
+=========================
+
+.DS_Store
+Thumbs.db
+
+=========================
+NuGet
+=========================
+
+packages/
+*.nupkg
