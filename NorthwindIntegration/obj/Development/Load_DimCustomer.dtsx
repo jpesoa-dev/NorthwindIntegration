@@ -11,8 +11,8 @@
   DTS:LocaleID="16394"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="20"
-  DTS:VersionGUID="{C5928E30-784B-404A-B7C3-36B07C9221F0}">
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{6B9D7621-E129-4456-98CE-5843535AECBC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -811,79 +811,21 @@ FROM dbo.Customers;</property>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="167.2,41.6"
-          Id="Package\DFT_Load_DimCustomer\LKP_DimCustomer"
-          TopLeft="479.999973773957,125.666665792796" />
+          Size="156,41.6"
+          Id="Package\DFT_Load_DimCustomer\SRC_Customers"
+          TopLeft="486.666640076373,27.7333331404792" />
+        <NodeLayout
+          Size="208,41.6"
+          Id="Package\DFT_Load_DimCustomer\DST_DimCustomer_Update"
+          TopLeft="592.499967627229,244.399998300473" />
         <NodeLayout
           Size="200,41.6"
           Id="Package\DFT_Load_DimCustomer\DST_DimCustomer_Insert"
           TopLeft="349.166647589042,240.066664997273" />
         <NodeLayout
-          Size="156,41.6"
-          Id="Package\DFT_Load_DimCustomer\SRC_Customers"
-          TopLeft="486.666640076373,27.7333331404792" />
-        <EdgeLayout
-          Id="Package\DFT_Load_DimCustomer.Paths[OLE DB Source Output]"
-          TopLeft="564.133306925165,69.3333331404792">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,56.3333326523172"
-              Start="0,0"
-              End="0,48.8333326523172">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,48.8333326523172" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT_Load_DimCustomer.Paths[Lookup No Match Output]"
-          TopLeft="537.066640440624,167.266665792796">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-87.8999928515818,72.7999992044764"
-              Start="0,0"
-              End="-87.8999928515818,65.2999992044764">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.5340281132852" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.5340281132852"
-                    Point2="0,29.5340281132852"
-                    Point3="-4,29.5340281132852" />
-                  <mssgle:LineSegment
-                    End="-83.8999928515818,29.5340281132852" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-83.8999928515818,29.5340281132852"
-                    Point2="-87.8999928515818,29.5340281132852"
-                    Point3="-87.8999928515818,33.5340281132852" />
-                  <mssgle:LineSegment
-                    End="-87.8999928515818,65.2999992044764" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-99.7563831445409,34.5340281132852,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="208,41.6"
-          Id="Package\DFT_Load_DimCustomer\DST_DimCustomer_Update"
-          TopLeft="592.499967627229,244.399998300473" />
+          Size="167.2,41.6"
+          Id="Package\DFT_Load_DimCustomer\LKP_DimCustomer"
+          TopLeft="479.999973773957,125.666665792796" />
         <EdgeLayout
           Id="Package\DFT_Load_DimCustomer.Paths[Lookup Match Output]"
           TopLeft="590.133307107291,167.266665792796">
@@ -920,27 +862,70 @@ FROM dbo.Customers;</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_Load_DimCustomer.Paths[OLE DB Source Output]"
+          TopLeft="564.133306925165,69.3333331404792">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56.3333326523168"
+              Start="0,0"
+              End="0,48.8333326523168">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.8333326523168" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT_Load_DimCustomer.Paths[Lookup No Match Output]"
+          TopLeft="537.066640440624,167.266665792796">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-87.8999928515816,72.799999204477"
+              Start="0,0"
+              End="-87.8999928515816,65.299999204477">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.5340281132854" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.5340281132854"
+                    Point2="0,29.5340281132854"
+                    Point3="-4,29.5340281132854" />
+                  <mssgle:LineSegment
+                    End="-83.8999928515816,29.5340281132854" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-83.8999928515816,29.5340281132854"
+                    Point2="-87.8999928515816,29.5340281132854"
+                    Point3="-87.8999928515816,33.5340281132854" />
+                  <mssgle:LineSegment
+                    End="-87.8999928515816,65.299999204477" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-99.7563831445408,34.5340281132854,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_Load_DimCustomer\LKP_DimCustomer">
+    design-time-name="Package\DFT_Load_DimCustomer\SRC_Customers">
     <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[DimCustomer]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>
@@ -960,8 +945,23 @@ FROM dbo.Customers;</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_Load_DimCustomer\SRC_Customers">
+    design-time-name="Package\DFT_Load_DimCustomer\LKP_DimCustomer">
     <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[DimCustomer]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
       <Property>
         <Name>DataSourceViewID</Name>
       </Property>

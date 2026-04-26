@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>NorthwindIntegration</Name>
-    <LastWriteTime>2026-04-26T21:08:04.6411453Z</LastWriteTime>
+    <LastWriteTime>2026-04-26T21:19:03.4686518Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Load_DimCustomer.dtsx</Name>
-      <LastWriteTime>2026-04-26T21:08:04.6173458Z</LastWriteTime>
+      <LastWriteTime>2026-04-26T21:34:24.8033045Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -24,6 +24,11 @@
     <ProjectBuildItemInfo>
       <Name>Load_DimShipper.dtsx</Name>
       <LastWriteTime>2026-04-26T21:08:04.601999Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Load_FactSales.dtsx</Name>
+      <LastWriteTime>2026-04-26T21:36:48.0245361Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
