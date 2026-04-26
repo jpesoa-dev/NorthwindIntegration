@@ -1,91 +1,80 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="4/26/2026 4:10:28 PM"
+  DTS:CreationDate="4/26/2026 4:57:59 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="ONPJPESOA"
   DTS:CreatorName="BSOL\jpesoa"
-  DTS:DTSID="{40CC33DD-DB15-4808-A44E-A0F542649009}"
+  DTS:DTSID="{62E4FE03-E254-4834-8EEB-9CAE855ACD26}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="17.0.1016.0"
   DTS:LocaleID="16394"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="22"
-  DTS:VersionGUID="{26ECA02C-6831-4C13-87FD-6DA0399283CD}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{6F81403A-3003-442B-918A-A4147997E435}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[localhost.Northwind]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{3A261CF5-362C-4B72-856D-22A7ADF870DE}"
+      DTS:DTSID="{EEA3E41B-CD37-418A-91FA-47A680BBD6A1}"
       DTS:ObjectName="localhost.Northwind">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=Northwind;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{3A261CF5-362C-4B72-856D-22A7ADF870DE}localhost.Northwind;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=Northwind;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{EEA3E41B-CD37-418A-91FA-47A680BBD6A1}localhost.Northwind;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.Northwind 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{916131FE-932E-44AA-8C33-6EDCEFD42998}"
+      DTS:ObjectName="localhost.Northwind 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=Northwind;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{916131FE-932E-44AA-8C33-6EDCEFD42998}localhost.Northwind 1;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[localhost.NorthwindDW]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{EBE00D40-4679-475E-AA3E-8C8D8A188CFD}"
+      DTS:DTSID="{AB728004-A8E2-4466-BB8B-5F014E683184}"
       DTS:ObjectName="localhost.NorthwindDW">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=NorthwindDW;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{EBE00D40-4679-475E-AA3E-8C8D8A188CFD}localhost.NorthwindDW;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[localhost.NorthwindDW 1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{36DAC280-A1C0-46EA-A25C-25A0D430231B}"
-      DTS:ObjectName="localhost.NorthwindDW 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=NorthwindDW;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{36DAC280-A1C0-46EA-A25C-25A0D430231B}localhost.NorthwindDW 1;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[localhost.NorthwindDW 2]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{390EE177-2D0E-4665-B290-3D3F0A2739A3}"
-      DTS:ObjectName="localhost.NorthwindDW 2">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=NorthwindDW;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{390EE177-2D0E-4665-B290-3D3F0A2739A3}localhost.NorthwindDW 2;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=NorthwindDW;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{AB728004-A8E2-4466-BB8B-5F014E683184}localhost.NorthwindDW;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\DFT_Load_DimProduct"
+      DTS:refId="Package\SRC_Employee"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{83545B00-E8A9-4E8B-92A4-64A1DD08A8FF}"
+      DTS:DTSID="{8787ED6D-5BD8-4F48-AF40-FCE09C3A60D7}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="DFT_Load_DimProduct">
+      DTS:ObjectName="SRC_Employee"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
         <pipeline
           version="1">
           <components>
             <component
-              refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert"
+              refId="Package\SRC_Employee\DST_DimEmployee_Insert"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="DST_DimProduct_Insert"
+              name="DST_DimEmployee_Insert"
               usesDispositions="true"
               version="4">
               <properties>
@@ -96,7 +85,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[DimProduct]</property>
+                  name="OpenRowset">[dbo].[DimEmployee]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -138,7 +127,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Connections[OleDbConnection]"
+                  refId="Package\SRC_Employee\DST_DimEmployee_Insert.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[localhost.NorthwindDW]"
                   connectionManagerRefId="Package.ConnectionManagers[localhost.NorthwindDW]"
                   description="The OLE DB runtime connection used to access the database."
@@ -146,79 +135,67 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input]"
+                  refId="Package\SRC_Employee\DST_DimEmployee_Insert.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input].Columns[ProductID]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Insert.Inputs[OLE DB Destination Input].Columns[EmployeeID]"
                       cachedDataType="i4"
-                      cachedName="ProductID"
-                      externalMetadataColumnId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[ProductID]" />
+                      cachedName="EmployeeID"
+                      externalMetadataColumnId="Package\SRC_Employee\DST_DimEmployee_Insert.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeID]"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[EmployeeID]" />
                     <inputColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input].Columns[ProductName]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Insert.Inputs[OLE DB Destination Input].Columns[FirstName]"
                       cachedDataType="wstr"
-                      cachedLength="40"
-                      cachedName="ProductName"
-                      externalMetadataColumnId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input].ExternalColumns[ProductName]"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[ProductName]" />
+                      cachedLength="10"
+                      cachedName="FirstName"
+                      externalMetadataColumnId="Package\SRC_Employee\DST_DimEmployee_Insert.Inputs[OLE DB Destination Input].ExternalColumns[FirstName]"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[FirstName]" />
                     <inputColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input].Columns[CategoryName]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Insert.Inputs[OLE DB Destination Input].Columns[LastName]"
                       cachedDataType="wstr"
-                      cachedLength="15"
-                      cachedName="CategoryName"
-                      externalMetadataColumnId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input].ExternalColumns[CategoryName]"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[CategoryName]" />
+                      cachedLength="20"
+                      cachedName="LastName"
+                      externalMetadataColumnId="Package\SRC_Employee\DST_DimEmployee_Insert.Inputs[OLE DB Destination Input].ExternalColumns[LastName]"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[LastName]" />
                     <inputColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input].Columns[SupplierName]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Insert.Inputs[OLE DB Destination Input].Columns[Title]"
                       cachedDataType="wstr"
-                      cachedLength="40"
-                      cachedName="SupplierName"
-                      externalMetadataColumnId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input].ExternalColumns[SupplierName]"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[SupplierName]" />
-                    <inputColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input].Columns[UnitPrice]"
-                      cachedDataType="cy"
-                      cachedName="UnitPrice"
-                      externalMetadataColumnId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[UnitPrice]" />
+                      cachedLength="30"
+                      cachedName="Title"
+                      externalMetadataColumnId="Package\SRC_Employee\DST_DimEmployee_Insert.Inputs[OLE DB Destination Input].ExternalColumns[Title]"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[Title]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input].ExternalColumns[ProductSK]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Insert.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeSK]"
                       dataType="i4"
-                      name="ProductSK" />
+                      name="EmployeeSK" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Insert.Inputs[OLE DB Destination Input].ExternalColumns[EmployeeID]"
                       dataType="i4"
-                      name="ProductID" />
+                      name="EmployeeID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input].ExternalColumns[ProductName]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Insert.Inputs[OLE DB Destination Input].ExternalColumns[FirstName]"
                       dataType="wstr"
-                      length="40"
-                      name="ProductName" />
+                      length="10"
+                      name="FirstName" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input].ExternalColumns[CategoryName]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Insert.Inputs[OLE DB Destination Input].ExternalColumns[LastName]"
                       dataType="wstr"
-                      length="15"
-                      name="CategoryName" />
+                      length="20"
+                      name="LastName" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input].ExternalColumns[SupplierName]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Insert.Inputs[OLE DB Destination Input].ExternalColumns[Title]"
                       dataType="wstr"
-                      length="40"
-                      name="SupplierName" />
+                      length="30"
+                      name="Title" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
-                      dataType="numeric"
-                      name="UnitPrice"
-                      precision="10"
-                      scale="2" />
-                    <externalMetadataColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Insert.Inputs[OLE DB Destination Input].ExternalColumns[CreatedDate]"
                       dataType="dbTimeStamp"
                       name="CreatedDate" />
                   </externalMetadataColumns>
@@ -226,22 +203,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\SRC_Employee\DST_DimEmployee_Insert.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\SRC_Employee\DST_DimEmployee_Insert.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Insert.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\SRC_Employee\DST_DimEmployee_Insert.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Insert.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\SRC_Employee\DST_DimEmployee_Insert.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -250,11 +227,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\DFT_Load_DimProduct\DST_DimProduct_Update"
+              refId="Package\SRC_Employee\DST_DimEmployee_Update"
               componentClassID="Microsoft.OLEDBCommand"
               contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
               description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
-              name="DST_DimProduct_Update"
+              name="DST_DimEmployee_Update"
               usesDispositions="true"
               version="2">
               <properties>
@@ -267,13 +244,12 @@
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE dbo.DimProduct
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE dbo.DimEmployee
 SET 
-    ProductName = ?,
-    CategoryName = ?,
-    SupplierName = ?,
-    UnitPrice = ?
-WHERE ProductID = ?</property>
+    FirstName = ?,
+    LastName = ?,
+    Title = ?
+WHERE EmployeeID = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -281,7 +257,7 @@ WHERE ProductID = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Connections[OleDbConnection]"
+                  refId="Package\SRC_Employee\DST_DimEmployee_Update.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[localhost.NorthwindDW]"
                   connectionManagerRefId="Package.ConnectionManagers[localhost.NorthwindDW]"
                   description="The OLE DB runtime connection used to access the database."
@@ -289,52 +265,46 @@ WHERE ProductID = ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input]"
+                  refId="Package\SRC_Employee\DST_DimEmployee_Update.Inputs[OLE DB Command Input]"
                   errorOrTruncationOperation="Command Execution"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Command Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input].Columns[ProductName]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Update.Inputs[OLE DB Command Input].Columns[FirstName]"
                       cachedDataType="wstr"
-                      cachedLength="40"
-                      cachedName="ProductName"
-                      externalMetadataColumnId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[ProductName]" />
+                      cachedLength="10"
+                      cachedName="FirstName"
+                      externalMetadataColumnId="Package\SRC_Employee\DST_DimEmployee_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[FirstName]" />
                     <inputColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input].Columns[CategoryName]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Update.Inputs[OLE DB Command Input].Columns[LastName]"
                       cachedDataType="wstr"
-                      cachedLength="15"
-                      cachedName="CategoryName"
-                      externalMetadataColumnId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[CategoryName]" />
+                      cachedLength="20"
+                      cachedName="LastName"
+                      externalMetadataColumnId="Package\SRC_Employee\DST_DimEmployee_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[LastName]" />
                     <inputColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input].Columns[SupplierName]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Update.Inputs[OLE DB Command Input].Columns[Title]"
                       cachedDataType="wstr"
-                      cachedLength="40"
-                      cachedName="SupplierName"
-                      externalMetadataColumnId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[SupplierName]" />
+                      cachedLength="30"
+                      cachedName="Title"
+                      externalMetadataColumnId="Package\SRC_Employee\DST_DimEmployee_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[Title]" />
                     <inputColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input].Columns[UnitPrice]"
-                      cachedDataType="cy"
-                      cachedName="UnitPrice"
-                      externalMetadataColumnId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[UnitPrice]" />
-                    <inputColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input].Columns[ProductID]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Update.Inputs[OLE DB Command Input].Columns[EmployeeID]"
                       cachedDataType="i4"
-                      cachedName="ProductID"
-                      externalMetadataColumnId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[ProductID]" />
+                      cachedName="EmployeeID"
+                      externalMetadataColumnId="Package\SRC_Employee\DST_DimEmployee_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[EmployeeID]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
                       dataType="wstr"
-                      length="40"
+                      length="10"
                       name="Param_0">
                       <properties>
                         <property
@@ -344,9 +314,9 @@ WHERE ProductID = ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
                       dataType="wstr"
-                      length="15"
+                      length="20"
                       name="Param_1">
                       <properties>
                         <property
@@ -356,9 +326,9 @@ WHERE ProductID = ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
                       dataType="wstr"
-                      length="40"
+                      length="30"
                       name="Param_2">
                       <properties>
                         <property
@@ -368,22 +338,9 @@ WHERE ProductID = ?</property>
                       </properties>
                     </externalMetadataColumn>
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
-                      dataType="numeric"
-                      name="Param_3"
-                      precision="10"
-                      scale="2">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                          name="DBParamInfoFlags">81</property>
-                      </properties>
-                    </externalMetadataColumn>
-                    <externalMetadataColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Update.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
                       dataType="i4"
-                      name="Param_4">
+                      name="Param_3">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -396,29 +353,29 @@ WHERE ProductID = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Outputs[OLE DB Command Output]"
+                  refId="Package\SRC_Employee\DST_DimEmployee_Update.Outputs[OLE DB Command Output]"
                   exclusionGroup="1"
                   name="OLE DB Command Output"
-                  synchronousInputId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input]">
+                  synchronousInputId="Package\SRC_Employee\DST_DimEmployee_Update.Inputs[OLE DB Command Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Outputs[OLE DB Command Error Output]"
+                  refId="Package\SRC_Employee\DST_DimEmployee_Update.Outputs[OLE DB Command Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Command Error Output"
-                  synchronousInputId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input]">
+                  synchronousInputId="Package\SRC_Employee\DST_DimEmployee_Update.Inputs[OLE DB Command Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Update.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      lineageId="Package\SRC_Employee\DST_DimEmployee_Update.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      refId="Package\SRC_Employee\DST_DimEmployee_Update.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\SRC_Employee\DST_DimEmployee_Update.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -427,11 +384,11 @@ WHERE ProductID = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\DFT_Load_DimProduct\LKP_DimProduct"
+              refId="Package\SRC_Employee\LKP_DimEmployee"
               componentClassID="Microsoft.Lookup"
               contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
               description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-              name="LKP_DimProduct"
+              name="LKP_DimEmployee"
               usesDispositions="true"
               version="6">
               <properties>
@@ -440,14 +397,14 @@ WHERE ProductID = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimProduct]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[DimEmployee]</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimProduct]) [refTable]
-where [refTable].[ProductID] = ?</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[DimEmployee]) [refTable]
+where [refTable].[EmployeeID] = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the type of connection used to access the reference dataset."
@@ -478,12 +435,12 @@ where [refTable].[ProductID] = ?</property>
                 <property
                   dataType="System.String"
                   description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="ProductSK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ProductID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ProductName" dataType="DT_WSTR" length="40" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CategoryName" dataType="DT_WSTR" length="15" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SupplierName" dataType="DT_WSTR" length="40" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="UnitPrice" dataType="DT_NUMERIC" length="0" precision="10" scale="2" codePage="0"/&gt;&lt;referenceColumn name="CreatedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="EmployeeSK" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EmployeeID" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FirstName" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="LastName" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Title" dataType="DT_WSTR" length="30" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CreatedDate" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[ProductID]};</property>
+                  name="ParameterMap">#{Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[EmployeeID]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -495,7 +452,7 @@ where [refTable].[ProductID] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT_Load_DimProduct\LKP_DimProduct.Connections[OleDbConnection]"
+                  refId="Package\SRC_Employee\LKP_DimEmployee.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[localhost.NorthwindDW]"
                   connectionManagerRefId="Package.ConnectionManagers[localhost.NorthwindDW]"
                   description="Connection manager used to access lookup data."
@@ -503,19 +460,19 @@ where [refTable].[ProductID] = ?</property>
               </connections>
               <inputs>
                 <input
-                  refId="Package\DFT_Load_DimProduct\LKP_DimProduct.Inputs[Lookup Input]"
+                  refId="Package\SRC_Employee\LKP_DimEmployee.Inputs[Lookup Input]"
                   name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\DFT_Load_DimProduct\LKP_DimProduct.Inputs[Lookup Input].Columns[ProductID]"
+                      refId="Package\SRC_Employee\LKP_DimEmployee.Inputs[Lookup Input].Columns[EmployeeID]"
                       cachedDataType="i4"
-                      cachedName="ProductID"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[ProductID]">
+                      cachedName="EmployeeID"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[EmployeeID]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">ProductID</property>
+                          name="JoinToReferenceColumn">EmployeeID</property>
                         <property
                           dataType="System.Null"
                           description="Specifies the column in the reference table from which a column is copied."
@@ -528,54 +485,54 @@ where [refTable].[ProductID] = ?</property>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\DFT_Load_DimProduct\LKP_DimProduct.Outputs[Lookup Match Output]"
+                  refId="Package\SRC_Employee\LKP_DimEmployee.Outputs[Lookup Match Output]"
                   errorOrTruncationOperation="Lookup"
                   exclusionGroup="1"
                   name="Lookup Match Output"
-                  synchronousInputId="Package\DFT_Load_DimProduct\LKP_DimProduct.Inputs[Lookup Input]">
+                  synchronousInputId="Package\SRC_Employee\LKP_DimEmployee.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_Load_DimProduct\LKP_DimProduct.Outputs[Lookup Match Output].Columns[ProductSK]"
+                      refId="Package\SRC_Employee\LKP_DimEmployee.Outputs[Lookup Match Output].Columns[EmployeeSK]"
                       dataType="i4"
                       errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\DFT_Load_DimProduct\LKP_DimProduct.Outputs[Lookup Match Output].Columns[ProductSK]"
-                      name="ProductSK"
+                      lineageId="Package\SRC_Employee\LKP_DimEmployee.Outputs[Lookup Match Output].Columns[EmployeeSK]"
+                      name="EmployeeSK"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.String"
                           description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">ProductSK</property>
+                          name="CopyFromReferenceColumn">EmployeeSK</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT_Load_DimProduct\LKP_DimProduct.Outputs[Lookup No Match Output]"
+                  refId="Package\SRC_Employee\LKP_DimEmployee.Outputs[Lookup No Match Output]"
                   description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
                   exclusionGroup="1"
                   name="Lookup No Match Output"
-                  synchronousInputId="Package\DFT_Load_DimProduct\LKP_DimProduct.Inputs[Lookup Input]">
+                  synchronousInputId="Package\SRC_Employee\LKP_DimEmployee.Inputs[Lookup Input]">
                   <externalMetadataColumns />
                 </output>
                 <output
-                  refId="Package\DFT_Load_DimProduct\LKP_DimProduct.Outputs[Lookup Error Output]"
+                  refId="Package\SRC_Employee\LKP_DimEmployee.Outputs[Lookup Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Lookup Error Output"
-                  synchronousInputId="Package\DFT_Load_DimProduct\LKP_DimProduct.Inputs[Lookup Input]">
+                  synchronousInputId="Package\SRC_Employee\LKP_DimEmployee.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_Load_DimProduct\LKP_DimProduct.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      refId="Package\SRC_Employee\LKP_DimEmployee.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT_Load_DimProduct\LKP_DimProduct.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      lineageId="Package\SRC_Employee\LKP_DimEmployee.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT_Load_DimProduct\LKP_DimProduct.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      refId="Package\SRC_Employee\LKP_DimEmployee.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT_Load_DimProduct\LKP_DimProduct.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\SRC_Employee\LKP_DimEmployee.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -584,11 +541,11 @@ where [refTable].[ProductID] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\DFT_Load_DimProduct\SRC_Products"
+              refId="Package\SRC_Employee\SRC_Employees"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
               description="OLE DB Source"
-              name="SRC_Products"
+              name="SRC_Employees"
               usesDispositions="true"
               version="7">
               <properties>
@@ -609,16 +566,11 @@ where [refTable].[ProductID] = ?</property>
                   description="The SQL command to be executed."
                   name="SqlCommand"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT 
-    p.ProductID,
-    p.ProductName,
-    c.CategoryName,
-    s.CompanyName AS SupplierName,
-    p.UnitPrice
-FROM Northwind.dbo.Products p
-JOIN Northwind.dbo.Categories c 
-    ON p.CategoryID = c.CategoryID
-JOIN Northwind.dbo.Suppliers s 
-    ON p.SupplierID = s.SupplierID;</property>
+    EmployeeID,
+    FirstName,
+    LastName,
+    Title
+FROM Northwind.dbo.Employees;</property>
                 <property
                   dataType="System.String"
                   description="The variable that contains the SQL command to be executed."
@@ -643,7 +595,7 @@ JOIN Northwind.dbo.Suppliers s
               </properties>
               <connections>
                 <connection
-                  refId="Package\DFT_Load_DimProduct\SRC_Products.Connections[OleDbConnection]"
+                  refId="Package\SRC_Employee\SRC_Employees.Connections[OleDbConnection]"
                   connectionManagerID="Package.ConnectionManagers[localhost.Northwind]"
                   connectionManagerRefId="Package.ConnectionManagers[localhost.Northwind]"
                   description="The OLE DB runtime connection used to access the database."
@@ -651,128 +603,110 @@ JOIN Northwind.dbo.Suppliers s
               </connections>
               <outputs>
                 <output
-                  refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output]"
+                  refId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[ProductID]"
+                      refId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[EmployeeID]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[ProductID]"
-                      name="ProductID"
+                      externalMetadataColumnId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].ExternalColumns[EmployeeID]"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[EmployeeID]"
+                      name="EmployeeID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[ProductName]"
+                      refId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[FirstName]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].ExternalColumns[ProductName]"
-                      length="40"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[ProductName]"
-                      name="ProductName"
+                      externalMetadataColumnId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
+                      length="10"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[FirstName]"
+                      name="FirstName"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[CategoryName]"
+                      refId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[LastName]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].ExternalColumns[CategoryName]"
-                      length="15"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[CategoryName]"
-                      name="CategoryName"
+                      externalMetadataColumnId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
+                      length="20"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[LastName]"
+                      name="LastName"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[SupplierName]"
+                      refId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[Title]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].ExternalColumns[SupplierName]"
-                      length="40"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[SupplierName]"
-                      name="SupplierName"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[UnitPrice]"
-                      dataType="cy"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].ExternalColumns[UnitPrice]"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].Columns[UnitPrice]"
-                      name="UnitPrice"
+                      externalMetadataColumnId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].ExternalColumns[Title]"
+                      length="30"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].Columns[Title]"
+                      name="Title"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].ExternalColumns[ProductID]"
+                      refId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].ExternalColumns[EmployeeID]"
                       dataType="i4"
-                      name="ProductID" />
+                      name="EmployeeID" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].ExternalColumns[ProductName]"
+                      refId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
                       dataType="wstr"
-                      length="40"
-                      name="ProductName" />
+                      length="10"
+                      name="FirstName" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].ExternalColumns[CategoryName]"
+                      refId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
                       dataType="wstr"
-                      length="15"
-                      name="CategoryName" />
+                      length="20"
+                      name="LastName" />
                     <externalMetadataColumn
-                      refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].ExternalColumns[SupplierName]"
+                      refId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output].ExternalColumns[Title]"
                       dataType="wstr"
-                      length="40"
-                      name="SupplierName" />
-                    <externalMetadataColumn
-                      refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output].ExternalColumns[UnitPrice]"
-                      dataType="cy"
-                      name="UnitPrice" />
+                      length="30"
+                      name="Title" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Error Output]"
+                  refId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Error Output]"
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Error Output].Columns[ProductID]"
+                      refId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Error Output].Columns[EmployeeID]"
                       dataType="i4"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Error Output].Columns[ProductID]"
-                      name="ProductID" />
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Error Output].Columns[EmployeeID]"
+                      name="EmployeeID" />
                     <outputColumn
-                      refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Error Output].Columns[ProductName]"
+                      refId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Error Output].Columns[FirstName]"
                       dataType="wstr"
-                      length="40"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Error Output].Columns[ProductName]"
-                      name="ProductName" />
+                      length="10"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Error Output].Columns[FirstName]"
+                      name="FirstName" />
                     <outputColumn
-                      refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Error Output].Columns[CategoryName]"
+                      refId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Error Output].Columns[LastName]"
                       dataType="wstr"
-                      length="15"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Error Output].Columns[CategoryName]"
-                      name="CategoryName" />
+                      length="20"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Error Output].Columns[LastName]"
+                      name="LastName" />
                     <outputColumn
-                      refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Error Output].Columns[SupplierName]"
+                      refId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Error Output].Columns[Title]"
                       dataType="wstr"
-                      length="40"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Error Output].Columns[SupplierName]"
-                      name="SupplierName" />
+                      length="30"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Error Output].Columns[Title]"
+                      name="Title" />
                     <outputColumn
-                      refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Error Output].Columns[UnitPrice]"
-                      dataType="cy"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Error Output].Columns[UnitPrice]"
-                      name="UnitPrice" />
-                    <outputColumn
-                      refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      refId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -783,20 +717,20 @@ JOIN Northwind.dbo.Suppliers s
           </components>
           <paths>
             <path
-              refId="Package\DFT_Load_DimProduct.Paths[Lookup Match Output]"
-              endId="Package\DFT_Load_DimProduct\DST_DimProduct_Update.Inputs[OLE DB Command Input]"
+              refId="Package\SRC_Employee.Paths[Lookup Match Output]"
+              endId="Package\SRC_Employee\DST_DimEmployee_Update.Inputs[OLE DB Command Input]"
               name="Lookup Match Output"
-              startId="Package\DFT_Load_DimProduct\LKP_DimProduct.Outputs[Lookup Match Output]" />
+              startId="Package\SRC_Employee\LKP_DimEmployee.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\DFT_Load_DimProduct.Paths[Lookup No Match Output]"
-              endId="Package\DFT_Load_DimProduct\DST_DimProduct_Insert.Inputs[OLE DB Destination Input]"
+              refId="Package\SRC_Employee.Paths[Lookup No Match Output]"
+              endId="Package\SRC_Employee\DST_DimEmployee_Insert.Inputs[OLE DB Destination Input]"
               name="Lookup No Match Output"
-              startId="Package\DFT_Load_DimProduct\LKP_DimProduct.Outputs[Lookup No Match Output]" />
+              startId="Package\SRC_Employee\LKP_DimEmployee.Outputs[Lookup No Match Output]" />
             <path
-              refId="Package\DFT_Load_DimProduct.Paths[OLE DB Source Output]"
-              endId="Package\DFT_Load_DimProduct\LKP_DimProduct.Inputs[Lookup Input]"
+              refId="Package\SRC_Employee.Paths[OLE DB Source Output]"
+              endId="Package\SRC_Employee\LKP_DimEmployee.Inputs[Lookup Input]"
               name="OLE DB Source Output"
-              startId="Package\DFT_Load_DimProduct\SRC_Products.Outputs[OLE DB Source Output]" />
+              startId="Package\SRC_Employee\SRC_Employees.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -815,79 +749,39 @@ JOIN Northwind.dbo.Suppliers s
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="188,41.6"
-          Id="Package\DFT_Load_DimProduct"
-          TopLeft="35.5,35.5" />
+          Size="152,41.6"
+          Id="Package\SRC_Employee"
+          TopLeft="364.166646769478,37.2666664075189" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\DFT_Load_DimProduct">
+    design-time-name="Package\SRC_Employee">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="158.4,41.6"
-          Id="Package\DFT_Load_DimProduct\LKP_DimProduct"
-          TopLeft="285.66666194631,157.599997465611" />
+          Size="157.6,41.6"
+          Id="Package\SRC_Employee\SRC_Employees"
+          TopLeft="309.166649774546,42.4666663713588" />
         <NodeLayout
-          Size="191.2,41.6"
-          Id="Package\DFT_Load_DimProduct\DST_DimProduct_Insert"
-          TopLeft="154.833335364029,292.133328456746" />
-        <NodeLayout
-          Size="147.2,41.6"
-          Id="Package\DFT_Load_DimProduct\SRC_Products"
-          TopLeft="285.999995738268,62.9999990612269" />
+          Size="168.8,41.6"
+          Id="Package\SRC_Employee\LKP_DimEmployee"
+          TopLeft="307.499983198941,160.333332218395" />
         <EdgeLayout
-          Id="Package\DFT_Load_DimProduct.Paths[Lookup No Match Output]"
-          TopLeft="339.799995279643,199.199997465611">
+          Id="Package\SRC_Employee.Paths[OLE DB Source Output]"
+          TopLeft="389.933316486743,84.0666663713588">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-89.366659915614,92.933330991135"
+              EndConnector="0,76.2666658470366"
               Start="0,0"
-              End="-89.366659915614,85.433330991135">
+              End="0,68.7666658470366">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.7309323824008" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.7309323824008"
-                    Point2="0,37.7309323824008"
-                    Point3="-4,37.7309323824008" />
-                  <mssgle:LineSegment
-                    End="-85.366659915614,37.7309323824008" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-85.366659915614,37.7309323824008"
-                    Point2="-89.366659915614,37.7309323824008"
-                    Point3="-89.366659915614,41.7309323824008" />
-                  <mssgle:LineSegment
-                    End="-89.366659915614,85.433330991135" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-100.489716676557,42.7309323824008,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\DFT_Load_DimProduct.Paths[OLE DB Source Output]"
-          TopLeft="362.233328842289,104.599999061227">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,52.9999984043841"
-              Start="0,0"
-              End="0,45.4999984043841">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.4999984043841" />
+                    End="0,68.7666658470366" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -897,42 +791,82 @@ JOIN Northwind.dbo.Suppliers s
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="198.4,41.6"
-          Id="Package\DFT_Load_DimProduct\DST_DimProduct_Update"
-          TopLeft="419.166643764411,288.599997993112" />
+          Size="201.6,41.6"
+          Id="Package\SRC_Employee\DST_DimEmployee_Insert"
+          TopLeft="177.499990301828,276.466664744152" />
         <EdgeLayout
-          Id="Package\DFT_Load_DimProduct.Paths[Lookup Match Output]"
-          TopLeft="389.933328612977,199.199997465611">
+          Id="Package\SRC_Employee.Paths[Lookup No Match Output]"
+          TopLeft="365.099983198941,201.933332218395">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="128.433315151434,89.4000005275007"
+              EndConnector="-86.7999928971134,74.5333325257566"
               Start="0,0"
-              End="128.433315151434,81.9000005275007">
+              End="-86.7999928971134,67.0333325257566">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,32.2964002141653" />
+                    End="0,26.2332391090393" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,32.2964002141653"
-                    Point2="0,36.2964002141653"
-                    Point3="4,36.2964002141653" />
+                    Point1="0,26.2332391090393"
+                    Point2="0,30.2332391090393"
+                    Point3="-4,30.2332391090393" />
                   <mssgle:LineSegment
-                    End="124.433315151434,36.2964002141653" />
+                    End="-82.7999928971134,30.2332391090393" />
                   <mssgle:CubicBezierSegment
-                    Point1="124.433315151434,36.2964002141653"
-                    Point2="128.433315151434,36.2964002141653"
-                    Point3="128.433315151434,40.2964002141653" />
+                    Point1="-82.7999928971134,30.2332391090393"
+                    Point2="-86.7999928971134,30.2332391090393"
+                    Point3="-86.7999928971134,34.2332391090393" />
                   <mssgle:LineSegment
-                    End="128.433315151434,81.9000005275007" />
+                    End="-86.7999928971134,67.0333325257566" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="16.0252708569671,41.2964002141653,96.3827734375,11.609375"
+              BoundingBox="-99.2063831673067,35.2332391090393,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="208.8,41.6"
+          Id="Package\SRC_Employee\DST_DimEmployee_Update"
+          TopLeft="484.999973500769,276.466664744152" />
+        <EdgeLayout
+          Id="Package\SRC_Employee.Paths[Lookup Match Output]"
+          TopLeft="418.699983198941,201.933332218395">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="170.699990301828,74.5333325257566"
+              Start="0,0"
+              End="170.699990301828,67.0333325257566">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.2332391090393" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.2332391090393"
+                    Point2="0,30.2332391090393"
+                    Point3="4,30.2332391090393" />
+                  <mssgle:LineSegment
+                    End="166.699990301828,30.2332391090393" />
+                  <mssgle:CubicBezierSegment
+                    Point1="166.699990301828,30.2332391090393"
+                    Point2="170.699990301828,30.2332391090393"
+                    Point3="170.699990301828,34.2332391090393" />
+                  <mssgle:LineSegment
+                    End="170.699990301828,67.0333325257566" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="37.158608432164,35.2332391090393,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -940,22 +874,30 @@ JOIN Northwind.dbo.Suppliers s
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_Load_DimProduct\LKP_DimProduct">
+    design-time-name="Package\SRC_Employee\SRC_Employees">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\SRC_Employee\LKP_DimEmployee">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[DimProduct]</Value>
+          type="q3:string">[dbo].[DimEmployee]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -963,7 +905,7 @@ JOIN Northwind.dbo.Suppliers s
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\DFT_Load_DimProduct\DST_DimProduct_Insert">
+    design-time-name="Package\SRC_Employee\DST_DimEmployee_Insert">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -972,14 +914,6 @@ JOIN Northwind.dbo.Suppliers s
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\DFT_Load_DimProduct\SRC_Products">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
