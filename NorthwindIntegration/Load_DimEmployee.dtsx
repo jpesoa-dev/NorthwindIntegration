@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="4/26/2026 4:57:59 PM"
@@ -11,8 +11,9 @@
   DTS:LocaleID="16394"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
+  DTS:ProtectionLevel="0"
   DTS:VersionBuild="9"
-  DTS:VersionGUID="{6F81403A-3003-442B-918A-A4147997E435}">
+  DTS:VersionGUID="{B86839D4-D4BE-464C-ABBF-862588E654D5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
